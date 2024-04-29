@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Balance from "./Components/Balance";
+import Transaction from "./Components/Transaction";
+import logo from "./logo.svg";
+//import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-50 mt-5 mx-auto border border-dark py-3">
+      <h1 className="text-center pb-3">Expense Tracker</h1>
+      <Balance></Balance>
+      <Transaction></Transaction>
     </div>
   );
 }
